@@ -4,6 +4,13 @@ Este repositorio conserva tres proyectos distintos; no son versiones
 intercambiables ni se combinan en una sola aplicación. Cada uno tiene su propia
 carpeta y se publicará con un Release y un archivo fuente independiente.
 
+## Sitio web
+
+La página de presentación está en [`docs/`](docs/). Está preparada para
+publicarse con GitHub Pages usando `main` como rama de origen y `/docs` como
+carpeta. Incluye descripciones, enlaces al código y los Releases de los tres
+proyectos.
+
 | Proyecto | Carpeta | Destino |
 | --- | --- | --- |
 | Botty Prototype | `robot_botty/` | Prototipo completo del robot físico: movimiento, sensores, voz, visión, emociones y dashboard |
