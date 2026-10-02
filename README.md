@@ -6,10 +6,12 @@ carpeta y se publicará con un Release y un archivo fuente independiente.
 
 ## Sitio web
 
-La página de presentación está en [`docs/`](docs/). Está preparada para
-publicarse con GitHub Pages usando `main` como rama de origen y `/docs` como
-carpeta. Incluye descripciones, enlaces al código y los Releases de los tres
-proyectos.
+La [página de presentación de Botty](https://uyruw3.github.io/BottyTheRobot/)
+está publicada con GitHub Pages desde [`docs/`](docs/) en la rama
+`uyruw3-botty-project`. Incluye descripciones, enlaces al código y los Releases
+de los tres proyectos. Después de integrar el cambio en `main`, se puede
+cambiar la fuente de Pages a `main` y conservar `/docs` como carpeta de
+publicación.
 
 | Proyecto | Carpeta | Destino |
 | --- | --- | --- |
