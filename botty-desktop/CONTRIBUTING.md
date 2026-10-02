@@ -3,7 +3,7 @@
 ## Development setup
 
 ```powershell
-cd botty-desktop
+cd BottyDesktop
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -e ".[dev,voice]"

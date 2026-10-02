@@ -5,7 +5,7 @@
 1. Clone the repository:
    ```bash
    git clone <repo-url>
-   cd robot_botty
+   cd BottyRobot
    ```
 
 2. Create virtual environment:
@@ -74,27 +74,23 @@ Examples:
 ## Project Structure
 
 ```
-robot_botty/
-  botty/
-    __init__.py        # Package init
-    __main__.py        # Entry point
-    main.py            # Main loop
-    config.py          # Configuration
-    ai/                # AI and brain
-    audio/             # Speech recognition and synthesis
-    data/              # Dialogues, animations
-    display/           # OLED display
-    emotion/           # Emotion system
-    eyes/              # Eye rendering and animations
-    knowledge/         # Personality, facts, responses
-    memory/            # Vector and face memory
-    movement/          # Motor control
-    plugins/           # Plugin system and examples
-    rl/                # Reinforcement learning
-    sensors/           # Ultrasonic sensors
-    tools/             # Desktop hands, web search, controller
-    vision/            # Camera, face recognition
-    web/               # Web dashboard
-  tests/               # Test suite
-  scripts/             # Launchers and utilities
+botty/
+  __main__.py          # Entry point
+  main.py              # Robot main loop
+  config.py            # Runtime and hardware configuration
+  ai/                  # Ollama/OpenAI and tool calling
+  audio/               # Speech recognition and synthesis
+  display/             # Pygame and OLED displays
+  emotion/             # Emotion system
+  eyes/                # Eye rendering and animations
+  memory/              # Conversation and face memory
+  movement/            # Motor control
+  plugins/             # Plugin system and examples
+  rl/                  # Reinforcement learning
+  sensors/             # Ultrasonic sensors
+  vision/              # Camera and face recognition
+  web/                 # Optional web dashboard
+botty-robot/           # Stand-alone GPIO test console
+tests/                 # Test suite
+scripts/               # Launchers and utilities
 ```

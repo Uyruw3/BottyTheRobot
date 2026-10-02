@@ -1,8 +1,8 @@
-# Botty Robot Hardware
+# Botty Robot Hardware Console
 
-This is an independent Raspberry Pi hardware controller and test console. It
-does not import or require `botty-desktop`; the two robot software projects in
-this repository can be installed and released separately.
+This independent console lives in the [`BottyRobot`](https://github.com/Uyruw3/BottyRobot)
+repository and tests the physical Botty's motors, sonar, and buzzer. It does
+not import or require the Windows desktop edition.
 
 ## Requirements and wiring
 

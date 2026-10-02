@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0
+
+- Published Botty Desktop from its own standalone repository.
+- Clarified the Windows edition's optional voice and local AI setup.
+- Added privacy notes for microphone, screen OCR, and desktop actions.
+
 ## 0.1.0
 
 - Initial Windows desktop release.

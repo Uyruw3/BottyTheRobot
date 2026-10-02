@@ -4,7 +4,7 @@ Personality data for Botty — define su caracter, datos curiosos y humor.
 
 PERSONALITY = {
     "name": "Botty",
-    "version": "0.1.0 Alpha",
+    "version": "0.2.0 Alpha",
     "full_name": "Botty Desktop Prototype",
     "creator": "Un humano con mucho tiempo libre",
     "birth_date": "2026",
