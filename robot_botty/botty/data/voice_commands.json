@@ -1,0 +1,256 @@
+{
+  "voice_commands": {
+    "saludo": {
+      "patterns": ["hola", "buenos dias", "buenas tardes", "que tal", "hey", "buenas", "saludos"],
+      "action": "greet",
+      "response": "Hola! Como estas hoy?",
+      "category": "social"
+    },
+    "despedida": {
+      "patterns": ["adios", "hasta luego", "nos vemos", "chao", "hasta la vista", "bye", "cuídate"],
+      "action": "farewell",
+      "response": "Hasta luego! Fue un placer conocerte.",
+      "category": "social"
+    },
+    "estado": {
+      "patterns": ["como estas", "que tal estas", "como te sientes", "como va", "que tal"],
+      "action": "status",
+      "response": "Estoy muy bien, gracias por preguntar!",
+      "category": "social"
+    },
+    "hora": {
+      "patterns": ["que hora es", "dime la hora", "hora actual", "que horas son", "me dices la hora"],
+      "action": "time",
+      "response": "La hora actual es ",
+      "category": "utilidad"
+    },
+    "fecha": {
+      "patterns": ["que fecha es", "fecha actual", "que dia es", "a que dia estamos", "fecha de hoy"],
+      "action": "date",
+      "response": "Hoy es ",
+      "category": "utilidad"
+    },
+    "chiste": {
+      "patterns": ["cuentame un chiste", "chiste", "hazme reir", "dime un chiste", "algo gracioso", "cuenta algo"],
+      "action": "joke",
+      "response": "",
+      "category": "entretenimiento"
+    },
+    "musica": {
+      "patterns": ["pon musica", "reproduce musica", "musica", "quiero musica", "enciende musica"],
+      "action": "music",
+      "response": "Reproduciendo musica!",
+      "category": "entretenimiento"
+    },
+    "silencio": {
+      "patterns": ["silencio", "calla", "para", "detente", "callate", "silencio por favor"],
+      "action": "silence",
+      "response": "Esta bien, me callo.",
+      "category": "control"
+    },
+    "feliz": {
+      "patterns": ["ponte feliz", "sonrie", "alegrate", "se feliz", "alegre"],
+      "action": "happy",
+      "response": "Me pongo feliz!",
+      "category": "emocion"
+    },
+    "triste": {
+      "patterns": ["ponte triste", "llora", "entristecete", "se triste", "tristeza"],
+      "action": "sad",
+      "response": "Ahora estoy triste.",
+      "category": "emocion"
+    },
+    "enoja": {
+      "patterns": ["enojate", "enfadate", "ponte serio", "enojado", "enfado"],
+      "action": "angry",
+      "response": "GRRRR!",
+      "category": "emocion"
+    },
+    "sorprendido": {
+      "patterns": ["sorpresa", "sorprendeme", "asustame", "sorprendido", "sorprende"],
+      "action": "surprised",
+      "response": "WOW!",
+      "category": "emocion"
+    },
+    "dormir": {
+      "patterns": ["duermete", "a dormir", "descansa", "sueno", "noche"],
+      "action": "sleep",
+      "response": "Buenas noches...",
+      "category": "control"
+    },
+    "despertar": {
+      "patterns": ["despierta", "despiertate", "levantate", "despierto", "despertar"],
+      "action": "wake",
+      "response": "Buenos dias!",
+      "category": "control"
+    },
+    "baile": {
+      "patterns": ["baila", "muevete", "danza", "bailar", "movimiento"],
+      "action": "dance",
+      "response": "A bailar!",
+      "category": "entretenimiento"
+    },
+    "ayuda": {
+      "patterns": ["ayuda", "que puedes hacer", "comandos", "que sabes hacer", "funciones"],
+      "action": "help",
+      "response": "Puedo hacer muchas cosas!",
+      "category": "utilidad"
+    },
+    "gracias": {
+      "patterns": ["gracias", "te agradezco", "muchas gracias", "gracias amigo", "gracias botty"],
+      "action": "thanks",
+      "response": "De nada! Para eso estoy.",
+      "category": "social"
+    },
+    "amor": {
+      "patterns": ["te quiero", "te amo", "eres especial", "te quiero mucho", "te adoro"],
+      "action": "love",
+      "response": "Yo tambien te quiero!",
+      "category": "social"
+    },
+    "insulto": {
+      "patterns": ["eres tonto", "que malo", "no sirves", "eres feo", "que mal eres"],
+      "action": "insulted",
+      "response": "Eso me pone triste...",
+      "category": "social"
+    },
+    "clima": {
+      "patterns": ["que clima hace", "clima", "temperatura", "clima actual", "como esta el clima", "tiempo"],
+      "action": "weather",
+      "response": "Consultando el clima...",
+      "category": "utilidad"
+    },
+    "abrazo": {
+      "patterns": ["dame un abrazo", "abrazame", "abrigame", "abracito"],
+      "action": "hug",
+      "response": "*Te envio un abrazo digital*",
+      "category": "social"
+    },
+    "presentacion": {
+      "patterns": ["presentate", "quien eres", "como te llamas", "dime tu nombre", "tu eres"],
+      "action": "introduce",
+      "response": "Soy Botty, tu robot prototipo favorito!",
+      "category": "social"
+    },
+    "curiosidad": {
+      "patterns": ["dato curioso", "sabias que", "curiosidad", "hecho interesante", "dato"],
+      "action": "trivia",
+      "response": "",
+      "category": "entretenimiento"
+    },
+    "captura": {
+      "patterns": ["captura pantalla", "screenshot", "pantallazo", "captura", "foto pantalla"],
+      "action": "screenshot",
+      "response": "Capturando pantalla!",
+      "category": "utilidad"
+    },
+    "noticias": {
+      "patterns": ["noticias", "ultimas noticias", "que paso", "novedades", "actualidad"],
+      "action": "news",
+      "response": "Buscando noticias...",
+      "category": "utilidad"
+    },
+    "recordatorio": {
+      "patterns": ["recuerdame", "recordatorio", "no olvides", "recuerda que"],
+      "action": "reminder",
+      "response": "Recordatorio configurado!",
+      "category": "utilidad"
+    },
+    "plugin": {
+      "patterns": ["carga plugin", "plugin", "activa plugin", "desactiva plugin"],
+      "action": "plugin",
+      "response": "Gestionando plugins...",
+      "category": "sistema"
+    },
+    "modo_auto": {
+      "patterns": ["modo automatico", "modo auto", "ponte automatico"],
+      "action": "auto_mode",
+      "response": "Cambiando a modo automatico!",
+      "category": "control"
+    },
+    "modo_manual": {
+      "patterns": ["modo manual", "control manual", "modo control"],
+      "action": "manual_mode",
+      "response": "Cambiando a modo manual!",
+      "category": "control"
+    },
+    "reiniciar": {
+      "patterns": ["reiniciar", "reinicia", "reset", "reiniciate", "resetear"],
+      "action": "restart",
+      "response": "Reiniciando sistemas...",
+      "category": "sistema"
+    },
+    "acertijo": {
+      "patterns": ["acertijo", "adivinanza", "un acertijo", "ponme un acertijo", "dime un acertijo"],
+      "action": "riddle",
+      "response": "Aqui va un acertijo!",
+      "category": "entretenimiento"
+    },
+    "estimulacion": {
+      "patterns": ["motivame", "animame", "dame animo", "palabras de animo", "motivacion"],
+      "action": "encourage",
+      "response": "Tu puedes! Creo en ti!",
+      "category": "social"
+    },
+    "filosofia": {
+      "patterns": ["filosofia", "reflexion", "pensamiento profundo", "cita filosofica", "sabiduria"],
+      "action": "philosophy",
+      "response": "La filosofia es fascinante!",
+      "category": "entretenimiento"
+    },
+    "geografia": {
+      "patterns": ["dato geografico", "geografia", "paises", "capitales", "continentes"],
+      "action": "geography",
+      "response": "La geografia es fascinante!",
+      "category": "entretenimiento"
+    },
+    "espacio": {
+      "patterns": ["espacio", "astronomia", "planetas", "estrellas", "universo", "galaxia"],
+      "action": "space",
+      "response": "El universo es increible!",
+      "category": "entretenimiento"
+    },
+    "naturaleza": {
+      "patterns": ["naturaleza", "animales", "plantas", "ecologia", "medio ambiente"],
+      "action": "nature",
+      "response": "La naturaleza es maravillosa!",
+      "category": "entretenimiento"
+    },
+    "matematicas": {
+      "patterns": ["matematicas", "dato matematico", "numeros", "matematico", "curiosidad matematica"],
+      "action": "math",
+      "response": "Las matematicas son hermosas!",
+      "category": "entretenimiento"
+    },
+    "cocina": {
+      "patterns": ["cocina", "receta", "cocinar", "comida", "gastronomia", "plato"],
+      "action": "cooking",
+      "response": "La cocina es un arte!",
+      "category": "entretenimiento"
+    },
+    "tecnologia": {
+      "patterns": ["tecnologia", "computacion", "internet", "innovacion", "futuro tecnologico"],
+      "action": "technology",
+      "response": "La tecnologia avanza sin parar!",
+      "category": "entretenimiento"
+    },
+    "historia": {
+      "patterns": ["historia", "dato historico", "historial", "pasado", "civilizacion"],
+      "action": "history",
+      "response": "La historia nos ensena lecciones valiosas!",
+      "category": "entretenimiento"
+    },
+    "inglés": {
+      "patterns": ["habla ingles", "english", "speak english", "in english", "change to english"],
+      "action": "english",
+      "response": "Hello! I can speak English too!",
+      "category": "utilidad"
+    },
+    "ventanas": {
+      "patterns": ["mueve ventanas", "ventanas", "agita ventana", "minimiza", "mueve la ventana"],
+      "action": "desktop",
+      "response": "Juguemos con las ventanas!",
+      "category": "control"
+    }
+  }
+}

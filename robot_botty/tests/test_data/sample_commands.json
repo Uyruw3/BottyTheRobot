@@ -1,0 +1,24 @@
+{
+  "voice_commands": {
+    "saludo": {"patterns": ["hola", "buenos dias", "buenas tardes", "que tal"], "action": "greet", "response": "Hola! Como estas?"},
+    "despedida": {"patterns": ["adios", "hasta luego", "nos vemos", "chao"], "action": "farewell", "response": "Hasta luego! Fue un placer."},
+    "estado": {"patterns": ["como estas", "que tal estas", "como te sientes"], "action": "status", "response": "Estoy muy bien, gracias!"},
+    "hora": {"patterns": ["que hora es", "dime la hora", "hora actual"], "action": "time", "response": "La hora actual es "},
+    "fecha": {"patterns": ["que fecha es", "fecha actual", "que dia es"], "action": "date", "response": "Hoy es "},
+    "chiste": {"patterns": ["cuentame un chiste", "chiste", "hazme reir"], "action": "joke", "response": ""},
+    "musica": {"patterns": ["pon musica", "reproduce musica", "musica"], "action": "music", "response": "Reproduciendo musica!"},
+    "silencio": {"patterns": ["silencio", "calla", "para"], "action": "silence", "response": "Esta bien, me callo."},
+    "feliz": {"patterns": ["ponte feliz", "sonrie", "alegrate"], "action": "happy", "response": "Me pongo feliz!"},
+    "triste": {"patterns": ["ponte triste", "llora", "entristecete"], "action": "sad", "response": "Ahora estoy triste."},
+    "enoja": {"patterns": ["enojate", "enfadate", "ponte serio"], "action": "angry", "response": "GRRRR!"},
+    "sorprendido": {"patterns": ["sorpresa", "sorprendeme", "asustame"], "action": "surprised", "response": "WOW!"},
+    "dormir": {"patterns": ["duermete", "a dormir", "descansa"], "action": "sleep", "response": "Buenas noches..."},
+    "despertar": {"patterns": ["despierta", "despiertate", "levantate"], "action": "wake", "response": "Buenos dias!"},
+    "baile": {"patterns": ["baila", "muevete", "danza"], "action": "dance", "response": "A bailar!"},
+    "ayuda": {"patterns": ["ayuda", "que puedes hacer", "comandos"], "action": "help", "response": "Puedo hacer muchas cosas!"},
+    "gracias": {"patterns": ["gracias", "te agradezco", "muchas gracias"], "action": "thanks", "response": "De nada! Para eso estoy."},
+    "amor": {"patterns": ["te quiero", "te amo", "eres especial"], "action": "love", "response": "Yo tambien te quiero!"},
+    "insulto": {"patterns": ["eres tonto", "que malo", "no sirves"], "action": "insulted", "response": "Eso me pone triste..."},
+    "clima": {"patterns": ["que clima hace", "clima", "temperatura"], "action": "weather", "response": "Consultando el clima..."}
+  }
+}

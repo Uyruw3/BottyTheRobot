@@ -1,0 +1,68 @@
+botty:
+  name: "Botty"
+  version: "0.1.0"
+  debug: false
+  fullscreen: false
+  fps: 60
+
+display:
+  width: 480
+  height: 320
+  fullscreen: false
+  show_wip: true
+
+ai:
+  engine: "ollama"
+  model: "qwen2.5:3b"
+  temperature: 0.7
+  max_tokens: 256
+  system_prompt: "Eres Botty, un robot prototipo de escritorio."
+  ollama_host: "http://localhost:11434"
+  openai_key: ""
+  openai_model: "gpt-4"
+
+audio:
+  stt_engine: "google"
+  tts_engine: "pyttsx3"
+  language: "es-ES"
+  tts_speed: 160
+  mic_device_index: null
+
+vision:
+  camera_id: 0
+  camera_width: 640
+  camera_height: 480
+  camera_fps: 30
+  camera_backend: "opencv"
+  face_recognition_enabled: false
+  object_detection_enabled: false
+
+sensors:
+  ultrasonic_pins:
+    front_trigger: 23
+    front_echo: 24
+    left_trigger: 17
+    left_echo: 27
+    right_trigger: 22
+    right_echo: 5
+
+motors:
+  pwm_pin: 18
+  dir_pins: [23, 24, 25]
+  max_speed: 80
+  acceleration: 0.1
+
+memory:
+  max_entries: 1000
+  vector_dim: 128
+  persist_path: "~/.botty/memory.json"
+
+plugins:
+  enabled: true
+  directory: "~/.botty/plugins/"
+  auto_load: true
+
+developer:
+  hot_reload: false
+  log_level: "info"
+  profile: false

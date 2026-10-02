@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=64.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "botty-robot"
+version = "0.1.0"
+description = "Hardware control modules for the Botty physical robot"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Uyruw3/BottyTheRobot"
+
+[project.scripts]
+botty-robot = "robot_main:main"
+
+[tool.setuptools]
+py-modules = ["robot_main", "robot_hardware"]

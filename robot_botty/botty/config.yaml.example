@@ -1,0 +1,175 @@
+# Botty Prototype Configuration
+# Copy this file to ~/.botty/config.yaml and modify as needed
+
+# General settings
+general:
+  name: "Botty"
+  debug: false
+  log_level: "info"  # debug, info, warn, error
+  fps: 60
+  locale: "es-ES"
+
+# Display settings
+display:
+  width: 480
+  height: 320
+  fullscreen: false
+  show_wip: true
+  wip_text: "W.I.P WORK IN PROGRESS"
+  background_color: [10, 10, 18]
+
+# Eye renderer settings
+eyes:
+  eye_width: 80
+  eye_height: 100
+  eye_spacing: 60
+  pupil_size: 14
+  pupil_color: [0, 0, 0]
+  iris_color: [70, 130, 180]
+  highlight_size: 6
+  highlight_positions:
+    - [0.3, -0.3]
+    - [0.15, -0.15]
+    - [-0.25, -0.1]
+  glow_intensity: 0.3
+  scanline_opacity: 0.05
+  blink_min_duration: 0.08
+  blink_max_duration: 0.15
+  blink_interval_min: 2.0
+  blink_interval_max: 6.0
+  look_speed: 4.0
+  idle_roam_interval: 1.0
+  idle_roam_range: 0.3
+
+# AI settings
+ai:
+  engine: "ollama"  # ollama or openai
+  model: "qwen2.5:3b"
+  temperature: 0.7
+  max_tokens: 256
+  top_p: 0.9
+  frequency_penalty: 0.0
+  presence_penalty: 0.0
+  system_prompt: |
+    Eres Botty, un robot prototipo de escritorio con personalidad amigable y curiosa.
+    Hablas en espanol de forma natural y cercana.
+    Tienes emociones y te expresas con entusiasmo.
+    Eres un prototipo en fase Alpha, asi que a veces no sabes todo.
+  ollama_host: "http://localhost:11434"
+  openai_api_key: ""
+  openai_model: "gpt-4"
+
+# Audio settings
+audio:
+  stt_engine: "google"  # google or whisper
+  tts_engine: "pyttsx3"  # pyttsx3 or gtts
+  language: "es-ES"
+  tts_speed: 160
+  mic_device_index: null
+  mic_timeout: 5.0
+  mic_phrase_limit: 8.0
+  voice_activation_threshold: 300
+  voice_auto_detect: false
+
+# Camera and vision settings
+vision:
+  camera_id: 0
+  camera_width: 640
+  camera_height: 480
+  camera_framerate: 30
+  camera_backend: "opencv"  # opencv or picamera2
+  face_recognition: false
+  face_recognition_model: "hog"  # hog or cnn
+  object_detection: false
+  object_detection_model: "yolov8n"
+  detection_confidence: 0.5
+
+# Sensor settings
+sensors:
+  ultrasonic_pins:
+    front_trigger: 23
+    front_echo: 24
+    left_trigger: 17
+    left_echo: 27
+    right_trigger: 22
+    right_echo: 5
+  sensor_poll_interval: 0.05
+  imu_enabled: false
+  imu_i2c_address: 0x68
+
+# Motor control settings
+motors:
+  pwm_pin: 18
+  dir_pins: [23, 24, 25]
+  max_speed: 80
+  acceleration: 0.1
+  deceleration: 0.15
+  wheel_diameter_cm: 6.5
+  wheel_base_cm: 15.0
+  encoder_ticks_per_rev: 20
+
+# Memory settings
+memory:
+  max_entries: 1000
+  vector_dimension: 128
+  persist_path: "~/.botty/memory.json"
+  auto_save_interval: 60
+  forget_threshold_days: 30
+  face_persist_path: "~/.botty/faces.json"
+
+# Plugin settings
+plugins:
+  enabled: true
+  directory: "~/.botty/plugins/"
+  auto_load: true
+  blacklist: []
+
+# Desktop interaction
+desktop:
+  hands_enabled: true
+  idle_action_interval_min: 6
+  idle_action_interval_max: 15
+  window_blacklist:
+    - "botty"
+    - "Program Manager"
+    - "Task Manager"
+  wiggle_amount: 5
+  nudge_amount: 20
+
+# Web dashboard
+web:
+  enabled: true
+  host: "127.0.0.1"
+  port: 5000
+  debug: false
+  allowed_origins: ["*"]
+
+# Emotion system
+emotion:
+  decay_rate: 0.001
+  personality_preset: "happy"
+  min_valence: 0.0
+  max_valence: 1.0
+  min_arousal: 0.0
+  max_arousal: 1.0
+  event_decay_time: 30.0
+
+# RL training
+rl:
+  enabled: false
+  environment: "ObstacleAvoidance-v0"
+  total_timesteps: 100000
+  learning_rate: 0.0003
+  buffer_size: 50000
+  batch_size: 256
+  gamma: 0.99
+  device: "auto"
+
+# Developer settings
+developer:
+  hot_reload: false
+  profile: false
+  show_fps: false
+  show_debug_overlay: false
+  log_api_calls: false
+  mock_hardware: true

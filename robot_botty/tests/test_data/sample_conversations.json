@@ -1,0 +1,12 @@
+[
+  {"role": "user", "message": "Hola Botty!", "timestamp": "2026-01-15T10:30:00"},
+  {"role": "bot", "message": "Hola! Como estas hoy?", "emotion": "happy", "timestamp": "2026-01-15T10:30:01"},
+  {"role": "user", "message": "Bien, y tu?", "timestamp": "2026-01-15T10:30:05"},
+  {"role": "bot", "message": "Estoy muy bien, gracias por preguntar.", "emotion": "happy", "timestamp": "2026-01-15T10:30:06"},
+  {"role": "user", "message": "Que puedes hacer?", "timestamp": "2026-01-15T10:31:00"},
+  {"role": "bot", "message": "Puedo hablar contigo, expresar emociones con mis ojos, mover ventanas del escritorio, y mas!", "emotion": "happy", "timestamp": "2026-01-15T10:31:02"},
+  {"role": "user", "message": "Cuentame un chiste", "timestamp": "2026-01-15T10:32:00"},
+  {"role": "bot", "message": "Por que los robots no juegan al escondite? Porque tienen miedo de quedarse sin bateria!", "emotion": "happy", "timestamp": "2026-01-15T10:32:01"},
+  {"role": "user", "message": "jajaja buena", "timestamp": "2026-01-15T10:32:05"},
+  {"role": "bot", "message": "Me alegra que te guste!", "emotion": "happy", "timestamp": "2026-01-15T10:32:06"}
+]

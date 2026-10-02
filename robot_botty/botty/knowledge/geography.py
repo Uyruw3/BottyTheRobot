@@ -1,0 +1,93 @@
+"""
+Geography module — countries, capitals, landmarks, and world facts.
+"""
+
+CONTINENTS = [
+    "Africa", "Antarctica", "Asia", "Europe",
+    "North America", "Oceania", "South America",
+]
+
+COUNTRY_FACTS = [
+    "Rusia es el pais mas grande del mundo con 17.1 millones de km2.",
+    "La Ciudad del Vaticano es el pais mas pequeno del mundo.",
+    "Canada tiene mas lagos que todos los demas paises combinados.",
+    "China es el pais mas poblado del mundo con mas de 1,400 millones de personas.",
+    "Australia es el unico pais que es tambien un continente.",
+    "Brasil tiene la selva amazonica mas grande del mundo.",
+    "India tiene el muro fronterizo mas largo del mundo.",
+    "Japon tiene mas de 6,800 islas.",
+    "Chile es el pais mas largo de norte a sur del mundo.",
+    "Indonesia tiene mas de 17,000 islas.",
+    "Egipto tiene la civilizacion mas antigua de Africa.",
+    "Alemania tiene mas de 1,500 tipos diferentes de cerveza.",
+    "Francia es el pais mas visitado del mundo.",
+    "Italia tiene la mayor cantidad de sitios Patrimonio de la Humanidad de la UNESCO.",
+    "Mexico tiene 35 sitios declarados Patrimonio de la Humanidad.",
+    "Argentina tiene la montana mas alta de America llamada Aconcagua.",
+    "Peru tiene las famosas Lineas de Nazca.",
+    "Colombia produce uno de los mejores cafes del mundo.",
+    "Espanol es el idioma oficial de 21 paises.",
+    "Suiza tiene cuatro idiomas oficiales: aleman, frances, italiano y romanche.",
+    "Nueva Zelanda fue el primer pais en darle voto a la mujer en 1893.",
+    "Groenlandia es la isla mas grande del mundo.",
+    "Madagascar es la cuarta isla mas grande del mundo.",
+    "Tailandia solia llamarse Siam.",
+    "Corea del Sur tiene la velocidad de internet mas rapida del mundo.",
+]
+
+CAPITAL_FACTS = [
+    "Tokio, Japon, es la ciudad mas poblada del mundo con 37 millones de habitantes.",
+    "Londres tiene el metro mas antiguo del mundo, inaugurado en 1863.",
+    "Berlin tiene mas puentes que Venecia, con aproximadamente 1,700.",
+    "Paris tiene la Torre Eiffel, que mide 330 metros de altura.",
+    "Roma tiene mas de 2,000 fuentes publicas.",
+    "Madrid esta en el centro geografico de Espana.",
+    "Pekin es una de las ciudades mas antiguas del mundo, con mas de 3,000 anos.",
+    "Moscu tiene el edificio habitable mas alto de Europa.",
+    "El Cairo es la ciudad mas grande de Africa.",
+    "Buenos Aires tiene el teatro de opera mas grande del mundo, el Teatro Colon.",
+    "Lima es la segunda ciudad mas grande del mundo ubicada en un desierto.",
+    "Santiago de Chile esta rodeada por la Cordillera de los Andes.",
+    "Ottawa es la capital de Canada, no Toronto.",
+    "Canberra fue disenada especialmente para ser la capital de Australia.",
+    "Washington D.C. no pertenece a ningun estado de Estados Unidos.",
+    "Seul tiene la mejor conectividad a internet del mundo.",
+    "Estocolmo esta construida sobre 14 islas.",
+    "Viena ha sido clasificada como la ciudad con mejor calidad de vida del mundo.",
+    "Dublin fue fundada por los vikingos en el siglo IX.",
+    "Lisboa es la ciudad mas occidental de Europa continental.",
+]
+
+LANDMARK_FACTS = [
+    "La Gran Muralla China es visible desde el espacio, segun astronautas.",
+    "El Machu Picchu en Peru fue construido en el siglo XV.",
+    "La Estatua de la Libertad fue un regalo de Francia a Estados Unidos en 1886.",
+    "El Coliseo Romano podia albergar hasta 80,000 espectadores.",
+    "La Torre Eiffel fue construida para la Exposicion Universal de 1889.",
+    "El Taj Mahal en India fue construido como un monumento al amor.",
+    "La Gran Piramide de Giza es la unica maravilla del mundo antiguo que aun existe.",
+    "El Cristo Redentor en Rio de Janeiro mide 38 metros de altura.",
+    "La Opera de Sydney es Patrimonio de la Humanidad de la UNESCO.",
+    "El Angkor Wat en Camboya es el templo religioso mas grande del mundo.",
+    "La Sagrada Familia de Barcelona lleva en construccion desde 1882.",
+    "El Monte Everest mide 8,849 metros sobre el nivel del mar.",
+    "El Rio Amazonas es el rio mas caudaloso del mundo.",
+    "Las Cataratas del Niagara tienen 51 metros de altura.",
+    "El Gran Canyon en Arizona tiene 446 kilometros de longitud.",
+    "La Selva Negra en Alemania es famosa por sus paisajes y leyendas.",
+    "El Desierto del Sahara es el desierto caliente mas grande del mundo.",
+    "La Barrera de Coral en Australia es el arrecife mas grande del mundo.",
+    "El Lago Baikal en Rusia contiene el 20% del agua dulce del mundo.",
+    "Los Alpes atraviesan 8 paises europeos.",
+    "El monte Fuji en Japon es un volcan activo de 3,776 metros.",
+    "La Patagonia argentino-chilena tiene glaciares, montanas y lagos espectaculares.",
+    "El rio Nilo es el rio mas largo del mundo con 6,650 kilometros.",
+    "La isla de Pascua es famosa por sus estatuas Moai de origen misterioso.",
+    "El Himalaya tiene las 10 montanas mas altas del mundo.",
+    "La Gran Barrera de Coral australiana tiene mas de 2,900 arrecifes individuales.",
+    "La amazonia peruana alberga la mayor biodiversidad del planeta.",
+    "El desierto de Atacama en Chile es el lugar mas seco del mundo.",
+    "Venecia esta construida sobre 118 islas conectadas por 400 puentes.",
+]
+
+ALL_GEOGRAPHY_FACTS = COUNTRY_FACTS + CAPITAL_FACTS + LANDMARK_FACTS

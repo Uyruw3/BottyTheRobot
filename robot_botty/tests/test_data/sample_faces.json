@@ -1,0 +1,5 @@
+[
+  {"name": "Alice", "encodings": [], "visits": 15, "first_seen": "2026-01-01", "last_seen": "2026-01-20", "familiarity": "amigo"},
+  {"name": "Bob", "encodings": [], "visits": 3, "first_seen": "2026-01-10", "last_seen": "2026-01-18", "familiarity": "conocido"},
+  {"name": "Charlie", "encodings": [], "visits": 1, "first_seen": "2026-01-19", "last_seen": "2026-01-19", "familiarity": "nuevo"}
+]

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Botty Prototype — Dashboard</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#111;color:#ddd;min-height:100vh}
+.header{background:#1a1a2e;padding:16px 24px;display:flex;align-items:center;gap:16px;border-bottom:2px solid #e94560}
+.header h1{font-size:1.4em;background:linear-gradient(135deg,#e94560,#0f3460);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.header .sub{color:#888;font-size:0.85em;margin-left:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;padding:16px}
+.card{background:#1a1a2e;border-radius:12px;padding:16px;border:1px solid #222}
+.card h2{font-size:0.95em;color:#e94560;margin-bottom:12px;text-transform:uppercase;letter-spacing:1px}
+.card .val{font-size:1.8em;font-weight:700;color:#fff}
+.card .label{font-size:0.8em;color:#888}
+.btn{background:#0f3460;color:#fff;border:none;padding:8px 16px;border-radius:6px;cursor:pointer;font-size:0.85em;transition:all .2s}
+.btn:hover{background:#e94560;transform:translateY(-1px)}
+.btn.active{background:#e94560}
+.btn.danger{background:#e94560}
+.btn.danger:hover{background:#ff6b6b}
+.btn-group{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.expression-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px}
+.exp-btn{background:#222;color:#ccc;border:1px solid #333;padding:6px;border-radius:4px;cursor:pointer;font-size:0.75em;text-align:center}
+.exp-btn:hover{background:#0f3460;border-color:#e94560}
+.chat-box{background:#0a0a12;border-radius:8px;padding:12px;height:200px;overflow-y:auto;margin-top:8px;font-size:0.85em}
+.chat-box .msg{color:#aaa;margin:4px 0}
+.chat-box .msg.user{color:#4fc3f7}
+.chat-box .msg.bot{color:#81c784}
+.chat-box .msg.system{color:#e94560;font-style:italic;font-size:0.8em}
+.chat-input{display:flex;gap:8px;margin-top:8px}
+.chat-input input{flex:1;background:#222;border:1px solid #333;color:#ddd;padding:8px 12px;border-radius:6px;font-size:0.85em}
+.chat-input input:focus{outline:none;border-color:#e94560}
+.motor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:8px;max-width:200px;margin-left:auto;margin-right:auto}
+.motor-btn{background:#222;border:1px solid #333;border-radius:6px;padding:12px;cursor:pointer;text-align:center;font-size:1.2em;color:#ccc;transition:all .1s}
+.motor-btn:hover{background:#0f3460;border-color:#e94560}
+.motor-btn:active{background:#e94560;transform:scale(0.95)}
+.log-box{background:#0a0a12;border-radius:8px;padding:12px;height:150px;overflow-y:auto;font-size:0.78em;font-family:'Consolas',monospace;margin-top:8px}
+.log-box .entry{color:#666;margin:2px 0}
+.log-box .entry:nth-child(odd){color:#888}
+.indicator{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
+.indicator.green{background:#4caf50}
+.indicator.yellow{background:#ff9800}
+.indicator.red{background:#e94560}
+.indicator.gray{background:#444}
+.status-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.status-item{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #1a1a1a;font-size:0.82em}
+@media(max-width:768px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 Botty Prototype</h1>
+  <span id="statusMode" class="sub">Desconectado</span>
+  <span class="sub" id="clock"></span>
+</div>
+
+<div class="grid">
+
+  <!-- Status -->
+  <div class="card">
+    <h2>Estado</h2>
+    <div style="display:flex;gap:24px">
+      <div><div class="val" id="emotionVal">--</div><div class="label">Emocion</div></div>
+      <div><div class="val" id="exprVal">--</div><div class="label">Expresion</div></div>
+      <div><div class="val" id="userVal">--</div><div class="label">Usuario</div></div>
+    </div>
+    <div class="status-grid" id="statusGrid"></div>
+  </div>
+
+  <!-- Camera -->
+  <div class="card">
+    <h2>Camara</h2>
+    <img id="videoFeed" src="/video_feed" style="width:100%;border-radius:8px;background:#000;aspect-ratio:4/3;object-fit:cover" alt="Camera feed">
+  </div>
+
+  <!-- Control -->
+  <div class="card">
+    <h2>Control</h2>
+    <div class="btn-group">
+      <button class="btn" onclick="setMode('auto')" id="btnAuto">🤖 Auto</button>
+      <button class="btn" onclick="setMode('manual')" id="btnManual">🎮 Manual</button>
+      <button class="btn danger" onclick="setMode('developer')" id="btnDev">⚡ Developer</button>
+    </div>
+    <div class="motor-grid">
+      <div></div>
+      <button class="motor-btn" onmousedown="motor('forward')" onmouseup="motor('stop')" ontouchstart="motor('forward')" ontouchend="motor('stop')">▲</button>
+      <div></div>
+      <button class="motor-btn" onmousedown="motor('left')" onmouseup="motor('stop')" ontouchstart="motor('left')" ontouchend="motor('stop')">◀</button>
+      <button class="motor-btn" onmousedown="motor('stop')" onmouseup="motor('stop')">⏹</button>
+      <button class="motor-btn" onmousedown="motor('right')" onmouseup="motor('stop')" ontouchstart="motor('right')" ontouchend="motor('stop')">▶</button>
+      <div></div>
+      <button class="motor-btn" onmousedown="motor('backward')" onmouseup="motor('stop')" ontouchstart="motor('backward')" ontouchend="motor('stop')">▼</button>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Expressions -->
+  <div class="card">
+    <h2>Expresiones</h2>
+    <div class="expression-grid" id="exprGrid"></div>
+  </div>
+
+  <!-- Chat -->
+  <div class="card" style="grid-column:span 2">
+    <h2>Chat IA</h2>
+    <div class="chat-box" id="chatBox"></div>
+    <div class="chat-input">
+      <input type="text" id="chatInput" placeholder="Escribe un mensaje a Botty..." onkeydown="if(event.key==='Enter')sendChat()">
+      <button class="btn" onclick="sendChat()">Enviar</button>
+      <button class="btn" onclick="speakText()">🔊 Hablar</button>
+    </div>
+  </div>
+
+  <!-- Sensors -->
+  <div class="card">
+    <h2>Sensores</h2>
+    <div id="sensorData">Esperando datos...</div>
+  </div>
+
+  <!-- Logs -->
+  <div class="card" style="grid-column:span 2">
+    <h2>Logs</h2>
+    <div class="log-box" id="logBox"></div>
+  </div>
+
+</div>
+
+<script>
+const EXPRESSIONS = [
+  'idle','happy','sad','angry','surprised','sleepy','loving',
+  'thinking','confused','searching','drive','developer'
+];
+const EXPR_GRID = document.getElementById('exprGrid');
+EXPRESSIONS.forEach(e => {
+  const btn = document.createElement('button');
+  btn.className = 'exp-btn';
+  btn.textContent = e;
+  btn.onclick = () => fetch('/api/expression', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({expression: e})
+  });
+  EXPR_GRID.appendChild(btn);
+});
+
+function setMode(mode) {
+  fetch('/api/mode', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({mode})
+  });
+  document.querySelectorAll('.btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('btn'+mode.charAt(0).toUpperCase()+mode.slice(1)).classList.add('active');
+}
+
+function motor(cmd) {
+  fetch('/api/motor', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({command: cmd})
+  });
+}
+
+function sendChat() {
+  const input = document.getElementById('chatInput');
+  const msg = input.value.trim();
+  if (!msg) return;
+  addChat(msg, 'user');
+  input.value = '';
+  fetch('/api/chat', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({message: msg})
+  }).then(r => r.json()).then(d => {
+    addChat(d.reply, 'bot');
+  });
+}
+
+function speakText() {
+  const input = document.getElementById('chatInput');
+  const msg = input.value.trim();
+  if (!msg) return;
+  fetch('/api/speak', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({text: msg})
+  });
+}
+
+function addChat(text, cls) {
+  const box = document.getElementById('chatBox');
+  const d = document.createElement('div');
+  d.className = 'msg ' + cls;
+  d.textContent = text;
+  box.appendChild(d);
+  box.scrollTop = box.scrollHeight;
+}
+
+function updateClock() {
+  document.getElementById('clock').textContent = new Date().toLocaleTimeString();
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+function pollStatus() {
+  fetch('/api/status').then(r => r.json()).then(d => {
+    document.getElementById('statusMode').textContent = 'Modo: ' + d.mode;
+    document.getElementById('emotionVal').textContent = d.mode;
+    document.getElementById('exprVal').textContent = d.expression;
+    document.getElementById('userVal').textContent = d.current_user || 'Nadie';
+
+    const grid = document.getElementById('statusGrid');
+    const items = [
+      ['Auto', d.auto_mode ? 'Si' : 'No', d.auto_mode ? 'green' : 'gray'],
+      ['Developer', d.developer_mode ? 'Si' : 'No', d.developer_mode ? 'red' : 'gray'],
+      ['Camara', d.camera_ok ? 'Ok' : 'No', d.camera_ok ? 'green' : 'red'],
+      ['Mando', d.controller_ok ? 'Conectado' : 'No', d.controller_ok ? 'green' : 'gray'],
+      ['Musica', d.music_playing ? 'Si' : 'No', d.music_playing ? 'green' : 'gray'],
+      ['Listener', d.listener_active ? 'Activo' : 'Off', d.listener_active ? 'green' : 'red'],
+      ['Lockout', d.lockout > 0 ? d.lockout+'s' : '0', d.lockout > 0 ? 'red' : 'green'],
+    ];
+    grid.innerHTML = items.map(([l,v,c]) =>
+      `<div class="status-item"><span>${l}</span><span><span class="indicator ${c}"></span>${v}</span></div>`
+    ).join('');
+  });
+}
+setInterval(pollStatus, 2000);
+pollStatus();
+
+function pollSensors() {
+  fetch('/api/sensors').then(r => r.json()).then(d => {
+    const s = d.sonar || {};
+    document.getElementById('sensorData').innerHTML =
+      Object.entries(s).map(([k,v]) =>
+        `<div class="status-item"><span>${k}</span><span>${v.toFixed(1)} cm</span></div>`
+      ).join('') || '<div class="label">No hay datos de sensores</div>';
+  });
+}
+setInterval(pollSensors, 3000);
+pollSensors();
+
+function pollEmotion() {
+  fetch('/api/emotion').then(r => r.json()).then(d => {
+    document.getElementById('emotionVal').textContent = d.emotion || '--';
+  });
+}
+setInterval(pollEmotion, 2000);
+pollEmotion();
+
+function pollLogs() {
+  fetch('/api/logs').then(r => r.json()).then(logs => {
+    const box = document.getElementById('logBox');
+    logs.forEach(l => {
+      const d = document.createElement('div');
+      d.className = 'entry';
+      d.textContent = `[${new Date(l.time*1000).toLocaleTimeString()}] ${l.msg}`;
+      box.appendChild(d);
+    });
+    if (logs.length > 0) box.scrollTop = box.scrollHeight;
+  });
+}
+setInterval(pollLogs, 2000);
+pollLogs();
+</script>
+</body>
+</html>

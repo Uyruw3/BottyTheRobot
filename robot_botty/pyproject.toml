@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "botty-prototype"
+version = "0.1.0"
+description = "Botty Prototype - Robot autonomo con ruedas, IA local, sensores y expresiones"
+authors = [{name = "Botty"}]
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "pygame-ce>=2.5.0",
+    "python-dotenv>=1.0.0",
+    "opencv-python>=4.8.0,<5",
+    "SpeechRecognition>=3.10.0",
+    "pyttsx3>=2.90",
+    "gTTS>=2.5.0",
+    "openai>=1.0.0",
+    "duckduckgo_search>=6.2.0",
+    "yt-dlp>=2024.0.0",
+]
+
+[project.optional-dependencies]
+vision = ["face_recognition>=1.3.0"]
+rl = ["stable-baselines3>=2.0.0", "gymnasium>=1.0.0"]
+oled = ["luma.oled>=3.0.0"]
+web = ["flask>=3.0.0"]
+dev = ["pytest>=7.0.0", "flask>=3.0.0", "pyinstaller>=6.0.0", "paramiko>=3.0.0"]
+all = [
+    "face_recognition>=1.3.0",
+    "stable-baselines3>=2.0.0",
+    "gymnasium>=1.0.0",
+    "luma.oled>=3.0.0",
+    "flask>=3.0.0",
+]
+
+[project.scripts]
+botty = "botty.__main__:main"
+botty-train = "botty.rl.obstacle_avoidance:train"
+botty-web = "botty.web.dashboard:main"
+botty-train-rl = "botty.rl.trainer:main"
+
+[tool.setuptools.packages.find]
+include = ["botty*"]

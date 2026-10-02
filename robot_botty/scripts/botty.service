@@ -1,0 +1,20 @@
+[Unit]
+Description=Botty Robot — Living.AI EMO style
+After=network.target sound.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/.botty
+Environment="DISPLAY=:0"
+Environment="XDG_RUNTIME_DIR=/run/user/1000"
+Environment="BOTTY_FACES_DIR=/home/pi/.botty/known_faces"
+ExecStartPre=/bin/mkdir -p /home/pi/.botty/known_faces
+ExecStart=/usr/local/bin/botty
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=graphical.target

@@ -1,0 +1,38 @@
+# Instalacion: pip install -e .
+# O: pip install -r requirements.txt
+
+# Core
+pygame-ce>=2.5.0
+python-dotenv>=1.0.0
+
+# Vision
+opencv-python>=4.8.0,<5
+
+# Audio
+SpeechRecognition>=3.10.0
+pyttsx3>=2.90
+gTTS>=2.5.0
+
+# AI
+openai>=1.0.0
+
+# Tools
+duckduckgo_search>=6.2.0
+yt-dlp>=2024.0.0
+
+# Optional facial recognition (may need native dlib build tools)
+# face_recognition>=1.3.0
+
+# RL (opcional, solo para entrenar)
+# stable-baselines3>=2.0.0
+# gymnasium>=0.29.0
+
+# Optional Raspberry Pi OLED
+# luma.oled>=4.0.0
+
+# Flasher (solo Windows)
+# pyinstaller>=6.0.0
+# paramiko>=3.0.0
+
+# Raspberry Pi GPIO
+# RPi.GPIO>=0.7.0

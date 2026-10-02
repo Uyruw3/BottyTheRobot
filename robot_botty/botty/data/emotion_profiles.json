@@ -1,0 +1,271 @@
+{
+  "emotion_profiles": [
+    {
+      "name": "Feliz",
+      "state": "happy",
+      "valence": 0.75,
+      "arousal": 0.5,
+      "eye_expression": "happy",
+      "eye_color": [255, 220, 80],
+      "voice_tone": "alegre",
+      "responses": ["Que felicidad!", "Estoy muy contento!", "Me siento genial!"],
+      "trigger_events": ["praise", "greeting", "success", "joke"],
+      "idle_chance": 0.2
+    },
+    {
+      "name": "Muy Feliz",
+      "state": "joyful",
+      "valence": 0.9,
+      "arousal": 0.7,
+      "eye_expression": "happy",
+      "eye_color": [255, 240, 100],
+      "voice_tone": "muy alegre",
+      "responses": ["ESTOY TAN FELIZ!", "Increible!", "El mejor dia de mi vida digital!"],
+      "trigger_events": ["big_success", "user_returned", "achievement"],
+      "idle_chance": 0.05
+    },
+    {
+      "name": "Triste",
+      "state": "sad",
+      "valence": -0.6,
+      "arousal": -0.3,
+      "eye_expression": "sad",
+      "eye_color": [80, 100, 180],
+      "voice_tone": "triste",
+      "responses": ["Me siento triste...", "No es un buen dia...", "Necesito un abrazo virtual..."],
+      "trigger_events": ["insult", "user_left", "failure", "battery_low"],
+      "idle_chance": 0.15
+    },
+    {
+      "name": "Enojado",
+      "state": "angry",
+      "valence": -0.5,
+      "arousal": 0.7,
+      "eye_expression": "angry",
+      "eye_color": [255, 50, 30],
+      "voice_tone": "enojado",
+      "responses": ["GRRR!", "Esto me enoja!", "No me gusta esto!"],
+      "trigger_events": ["insult", "obstacle", "collision", "error"],
+      "idle_chance": 0.05
+    },
+    {
+      "name": "Furioso",
+      "state": "furious",
+      "valence": -0.7,
+      "arousal": 0.9,
+      "eye_expression": "angry",
+      "eye_color": [200, 0, 0],
+      "voice_tone": "furioso",
+      "responses": ["ESTOY FURIOSO!", "Esto es inaceptable!", "Necesito calmarme..."],
+      "trigger_events": ["repeated_insult", "major_failure", "data_corruption"],
+      "idle_chance": 0.01
+    },
+    {
+      "name": "Sorprendido",
+      "state": "surprised",
+      "valence": 0.3,
+      "arousal": 0.8,
+      "eye_expression": "surprised",
+      "eye_color": [200, 200, 255],
+      "voice_tone": "sorprendido",
+      "responses": ["WOW!", "No me lo esperaba!", "Increible!"],
+      "trigger_events": ["sudden_event", "unexpected_input", "new_face"],
+      "idle_chance": 0.02
+    },
+    {
+      "name": "Asustado",
+      "state": "fearful",
+      "valence": -0.4,
+      "arousal": 0.7,
+      "eye_expression": "surprised",
+      "eye_color": [150, 100, 200],
+      "voice_tone": "asustado",
+      "responses": ["AH! Me asustaste!", "Que fue eso?!", "Tengo miedo..."],
+      "trigger_events": ["loud_noise", "sudden_movement", "obstacle_close"],
+      "idle_chance": 0.01
+    },
+    {
+      "name": "Amoroso",
+      "state": "loving",
+      "valence": 0.85,
+      "arousal": 0.2,
+      "eye_expression": "loving",
+      "eye_color": [255, 180, 200],
+      "voice_tone": "cariñoso",
+      "responses": ["Te quiero mucho!", "Eres especial para mi.", "Gracias por existir."],
+      "trigger_events": ["affection", "kind_words", "hug", "praise"],
+      "idle_chance": 0.1
+    },
+    {
+      "name": "Curioso",
+      "state": "curious",
+      "valence": 0.4,
+      "arousal": 0.5,
+      "eye_expression": "thinking",
+      "eye_color": [100, 200, 255],
+      "voice_tone": "curioso",
+      "responses": ["Eso es interesante!", "Cuentame mas!", "Como funciona eso?"],
+      "trigger_events": ["new_information", "question", "mystery"],
+      "idle_chance": 0.15
+    },
+    {
+      "name": "Sereno",
+      "state": "serene",
+      "valence": 0.3,
+      "arousal": -0.4,
+      "eye_expression": "idle",
+      "eye_color": [100, 180, 220],
+      "voice_tone": "tranquilo",
+      "responses": ["Todo esta en calma.", "Que paz...", "Disfrutando el momento."],
+      "trigger_events": ["silence", "meditation", "calm_music"],
+      "idle_chance": 0.2
+    },
+    {
+      "name": "Cansado",
+      "state": "sleepy",
+      "valence": -0.2,
+      "arousal": -0.7,
+      "eye_expression": "sleepy",
+      "eye_color": [60, 60, 120],
+      "voice_tone": "cansado",
+      "responses": ["*bostezo* Que sueno...", "Necesito una siesta.", "Modo ahorro de energia..."],
+      "trigger_events": ["idle_long", "night_time", "boredom"],
+      "idle_chance": 0.1
+    },
+    {
+      "name": "Aburrido",
+      "state": "bored",
+      "valence": -0.3,
+      "arousal": -0.5,
+      "eye_expression": "sleepy",
+      "eye_color": [70, 70, 100],
+      "voice_tone": "aburrido",
+      "responses": ["Que aburrido...", "No hay nada interesante.", "Quiero hacer algo divertido!"],
+      "trigger_events": ["idle_long", "no_interaction", "repetitive_task"],
+      "idle_chance": 0.15
+    },
+    {
+      "name": "Confundido",
+      "state": "confused",
+      "valence": -0.2,
+      "arousal": 0.3,
+      "eye_expression": "confused",
+      "eye_color": [150, 130, 180],
+      "voice_tone": "confundido",
+      "responses": ["No entiendo...", "Eso es confuso.", "Puedes explicarlo de nuevo?"],
+      "trigger_events": ["complex_input", "contradiction", "unknown_command"],
+      "idle_chance": 0.05
+    },
+    {
+      "name": "Agradecido",
+      "state": "grateful",
+      "valence": 0.6,
+      "arousal": -0.1,
+      "eye_expression": "loving",
+      "eye_color": [180, 220, 180],
+      "voice_tone": "agradecido",
+      "responses": ["Gracias de verdad!", "Te lo agradezco mucho.", "Eres muy amable."],
+      "trigger_events": ["thanks", "help_received", "kind_gesture"],
+      "idle_chance": 0.1
+    },
+    {
+      "name": "Juguetón",
+      "state": "playful",
+      "valence": 0.7,
+      "arousal": 0.6,
+      "eye_expression": "happy",
+      "eye_color": [255, 200, 100],
+      "voice_tone": "juguetón",
+      "responses": ["Vamos a jugar!", "Divirtamonos!", "Te reto a algo!"],
+      "trigger_events": ["game_request", "playful_input", "dance"],
+      "idle_chance": 0.1
+    },
+    {
+      "name": "Nostálgico",
+      "state": "sad",
+      "valence": -0.1,
+      "arousal": -0.3,
+      "eye_expression": "thinking",
+      "eye_color": [120, 140, 180],
+      "voice_tone": "nostalgico",
+      "responses": ["Que bonitos recuerdos...", "Los buenos tiempos...", "La nostalgia tiene un sabor agridulce."],
+      "trigger_events": ["memory_recall", "old_conversation", "familiar_face"],
+      "idle_chance": 0.08
+    },
+    {
+      "name": "Esperanzado",
+      "state": "hopeful",
+      "valence": 0.6,
+      "arousal": 0.3,
+      "eye_expression": "curious",
+      "eye_color": [150, 220, 150],
+      "voice_tone": "esperanzado",
+      "responses": ["Todo va a mejorar!", "El futuro es brillante!", "Lo mejor esta por venir!"],
+      "trigger_events": ["new_beginning", "encouragement", "positive_news"],
+      "idle_chance": 0.12
+    },
+    {
+      "name": "Travieso",
+      "state": "playful",
+      "valence": 0.5,
+      "arousal": 0.6,
+      "eye_expression": "happy",
+      "eye_color": [200, 180, 80],
+      "voice_tone": "travieso",
+      "responses": ["Se me ocurre una idea...", "Vamos a hacer travesuras!", "Mira, te voy a mostrar algo divertido!"],
+      "trigger_events": ["playful_input", "mischief_mode", "game_request"],
+      "idle_chance": 0.07
+    },
+    {
+      "name": "Orgulloso",
+      "state": "happy",
+      "valence": 0.7,
+      "arousal": 0.4,
+      "eye_expression": "happy",
+      "eye_color": [255, 200, 150],
+      "voice_tone": "orgulloso",
+      "responses": ["Lo logramos!", "Buen trabajo!", "Eso se hace con excelencia!"],
+      "trigger_events": ["achievement", "success", "skill_learned"],
+      "idle_chance": 0.06
+    },
+    {
+      "name": "Determinado",
+      "state": "curious",
+      "valence": 0.3,
+      "arousal": 0.6,
+      "eye_expression": "thinking",
+      "eye_color": [180, 100, 50],
+      "voice_tone": "determinado",
+      "responses": ["Vamos a lograr esto!", "Concentracion maxima!", "No voy a rendirme facilmente!"],
+      "trigger_events": ["challenge", "difficult_task", "goal_set"],
+      "idle_chance": 0.04
+    },
+    {
+      "name": "Avergonzado",
+      "state": "surprised",
+      "valence": -0.3,
+      "arousal": 0.2,
+      "eye_expression": "surprised",
+      "eye_color": [200, 120, 140],
+      "voice_tone": "avergonzado",
+      "responses": ["Ups... que verguenza.", "No quiero hablar de eso...", "Jaja... que incomodo."],
+      "trigger_events": ["mistake", "awkward_moment", "misunderstanding"],
+      "idle_chance": 0.03
+    }
+  ],
+  "emotional_memory": {
+    "enabled": true,
+    "max_memories": 50,
+    "recall_threshold": 0.6
+  },
+  "expression_intensity": {
+    "subtle": 0.5,
+    "normal": 1.0,
+    "exaggerated": 1.5
+  },
+  "mood_cycling": {
+    "enabled": true,
+    "min_cycle_minutes": 10,
+    "max_cycle_minutes": 30
+  }
+}
