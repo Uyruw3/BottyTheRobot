@@ -1,28 +1,29 @@
-# Botty: tres proyectos independientes
+# Botty: dos ediciones y una herramienta de hardware
 
-Este repositorio conserva tres proyectos distintos; no son versiones
-intercambiables ni se combinan en una sola aplicación. Cada uno tiene su propia
-carpeta y se publicará con un Release y un archivo fuente independiente.
+Botty Prototype y Botty Desktop son el mismo compañero en dos ediciones: una
+para el robot físico y otra para Windows. `botty-robot/` es una herramienta
+complementaria e independiente para probar/controlar hardware Raspberry Pi.
+El código de cada edición se mantiene en su propia carpeta y tiene un Release
+independiente.
 
 ## Sitio web
 
 La [página de presentación de Botty](https://uyruw3.github.io/BottyTheRobot/)
 está publicada con GitHub Pages desde [`docs/`](docs/) en la rama
-`uyruw3-botty-project`. Incluye descripciones, enlaces al código y los Releases
-de los tres proyectos. Después de integrar el cambio en `main`, se puede
-cambiar la fuente de Pages a `main` y conservar `/docs` como carpeta de
-publicación.
+`uyruw3-botty-project`. Presenta las dos ediciones del mismo Botty y su
+herramienta complementaria. Después de integrar el cambio en `main`, se puede
+cambiar la fuente de Pages a `main` y conservar `/docs` como carpeta.
 
-| Proyecto | Carpeta | Destino |
+| Producto / edición | Carpeta | Destino |
 | --- | --- | --- |
-| Botty Prototype | `robot_botty/` | Prototipo completo del robot físico: movimiento, sensores, voz, visión, emociones y dashboard |
-| Botty Robot Hardware | `botty-robot/` | Controlador GPIO y consola segura para probar motores, sonar y buzzer en Raspberry Pi |
-| Botty Desktop | `botty-desktop/` | Aplicación de escritorio para Windows con ojos animados, conversación y acciones de pantalla |
+| Botty Prototype | `robot_botty/` | Edición física de Botty para Raspberry Pi: sensores, movimiento, voz, visión, emociones y dashboard |
+| Botty Desktop | `botty-desktop/` | Edición de escritorio del mismo Botty para Windows: ojos animados, conversación y acciones de pantalla |
+| Botty Robot Hardware | `botty-robot/` | Herramienta complementaria para probar motores, sonar y buzzer en Raspberry Pi |
 
-Los tres son proyectos experimentales. Revisa el README de cada carpeta antes
-de instalar o conectar hardware.
+Botty y su controlador son proyectos experimentales. Revisa el README de cada
+carpeta antes de instalar software o conectar hardware.
 
-## Botty Prototype
+## Botty Prototype (edición física)
 
 ```powershell
 cd robot_botty
@@ -54,7 +55,7 @@ Consulta `botty-robot/README.md` para el mapa de pines BCM y las advertencias
 eléctricas; el eco de 5 V de un HC-SR04 requiere adaptación antes de conectarlo
 a una Raspberry Pi.
 
-## Botty Desktop
+## Botty Desktop (edición Windows del mismo Botty)
 
 ```powershell
 cd botty-desktop

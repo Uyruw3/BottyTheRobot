@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#0b1020">
     <meta
       name="description"
-      content="Conoce Botty: tres proyectos independientes de robótica y escritorio, con voz, visión, emociones y control físico."
+      content="Conoce Botty: el mismo compañero en edición de escritorio para Windows y prototipo físico para Raspberry Pi, más herramientas de hardware."
     >
     <title>Botty — robótica con personalidad</title>
     <link rel="stylesheet" href="styles.css">
@@ -30,9 +30,9 @@
           <p class="eyebrow"><span class="status-dot"></span> ROBÓTICA EXPERIMENTAL · CÓDIGO ABIERTO</p>
           <h1>Tecnología<br>con <span>personalidad.</span></h1>
           <p class="hero-description">
-            Botty explora nuevas formas de convivir con la tecnología: un robot
-            expresivo, proyectos de hardware y una aplicación de escritorio,
-            cada uno con su propio propósito.
+            Botty es el mismo compañero con personalidad, tanto en la pantalla
+            de Windows como en un robot físico. Elige cómo quieres conocerlo y
+            descubre también sus herramientas de hardware.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#proyectos">Descubre los proyectos <span aria-hidden="true">↓</span></a>
@@ -47,48 +47,57 @@
             <span class="eye eye-right"></span>
           </div>
           <span class="orbit-label">CURIOSO POR NATURALEZA</span>
-          <span class="orbit-coord">01 / 03</span>
+          <span class="orbit-coord">01 / 02</span>
         </div>
-        <div class="hero-index" aria-hidden="true"><span>01</span> — UNA IDEA, TRES CAMINOS</div>
+        <div class="hero-index" aria-hidden="true"><span>01</span> — UN BOTTY, DOS EDICIONES</div>
       </section>
 
       <section class="projects section-wrap" id="proyectos">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">TRES PROYECTOS · UN UNIVERSO</p>
-            <h2>Elige tu Botty.</h2>
+            <p class="eyebrow">UN COMPAÑERO · DOS EDICIONES</p>
+            <h2>Elige cómo vivir Botty.</h2>
           </div>
           <p class="section-intro">
-            No son versiones intercambiables: son proyectos independientes,
-            pensados para distintas maneras de experimentar con Botty.
+            Botty Desktop y Botty Prototype son el mismo proyecto en dos
+            formatos: una edición para Windows y otra para el robot físico.
+            El controlador GPIO es una herramienta complementaria.
           </p>
         </div>
 
         <div class="project-grid">
           <article class="project-card card-prototype">
-            <div class="card-topline"><span>01 / ROBOT COMPLETO</span><span class="card-symbol" aria-hidden="true">◎</span></div>
+            <div class="card-topline"><span>01 / EL COMPAÑERO BOTTY</span><span class="card-symbol" aria-hidden="true">◎</span></div>
             <div class="project-illustration illustration-prototype" aria-hidden="true">
               <span class="illustration-eye"></span><span class="illustration-eye"></span>
               <span class="illustration-base"></span>
             </div>
-            <p class="project-kicker">PARA RASPBERRY PI</p>
-            <h3>Botty Prototype</h3>
+            <p class="project-kicker">DOS EDICIONES · UN MISMO BOTTY</p>
+            <h3>Botty</h3>
             <p class="project-description">
-              El prototipo más completo para construir un compañero robótico
-              físico. Reúne voz, visión, memoria, emociones, plugins y un
-              dashboard web en una sola experiencia.
+              Elige la edición que se adapta a ti. Botty Desktop lleva sus ojos
+              animados y conversación a Windows; Botty Prototype lo lleva a un
+              robot físico con voz, visión, memoria, emociones y dashboard web.
             </p>
-            <ul class="tag-list" aria-label="Funciones principales">
-              <li>Voz e IA</li><li>Sensores</li><li>Dashboard</li>
+            <ul class="tag-list" aria-label="Funciones de Botty">
+              <li>Ojos animados</li><li>Conversación</li><li>Voz e IA</li><li>Robot físico</li>
             </ul>
-            <a class="card-link" href="https://github.com/Uyruw3/BottyTheRobot/tree/robot_botty-v0.1.0/robot_botty">
-              Explorar proyecto <span aria-hidden="true">↗</span>
-            </a>
-            <a class="release-link" href="https://github.com/Uyruw3/BottyTheRobot/releases/tag/robot_botty-v0.1.0">Release v0.1.0</a>
+            <div class="edition-links">
+              <div class="edition-link">
+                <span><strong>Desktop</strong><small>Windows</small></span>
+                <a href="https://github.com/Uyruw3/BottyTheRobot/tree/botty-desktop-v0.1.0/botty-desktop">Código <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/Uyruw3/BottyTheRobot/releases/tag/botty-desktop-v0.1.0">Release v0.1.0</a>
+              </div>
+              <div class="edition-link">
+                <span><strong>Prototype</strong><small>Raspberry Pi</small></span>
+                <a href="https://github.com/Uyruw3/BottyTheRobot/tree/robot_botty-v0.1.0/robot_botty">Código <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/Uyruw3/BottyTheRobot/releases/tag/robot_botty-v0.1.0">Release v0.1.0</a>
+              </div>
+            </div>
           </article>
 
           <article class="project-card card-hardware">
-            <div class="card-topline"><span>02 / HARDWARE</span><span class="card-symbol" aria-hidden="true">⌁</span></div>
+            <div class="card-topline"><span>02 / HERRAMIENTA COMPLEMENTARIA</span><span class="card-symbol" aria-hidden="true">⌁</span></div>
             <div class="project-illustration illustration-hardware" aria-hidden="true">
               <span class="hardware-wheel wheel-left"></span>
               <span class="hardware-board"><i></i><i></i><i></i><i></i></span>
@@ -98,9 +107,9 @@
             <p class="project-kicker">PARA RASPBERRY PI</p>
             <h3>Botty Robot Hardware</h3>
             <p class="project-description">
-              Un controlador independiente para probar motores, sonar y buzzer
-              desde una consola sencilla. Los movimientos son breves y
-              temporizados, y el modo simulación permite probar sin GPIO.
+              Una utilidad independiente para probar el hardware del Botty
+              físico: controla motores, sonar y buzzer desde una consola
+              sencilla. El modo simulación sirve para explorar sin GPIO.
             </p>
             <ul class="tag-list" aria-label="Funciones principales">
               <li>GPIO</li><li>Motores</li><li>Simulación</li>
@@ -110,32 +119,6 @@
             </a>
             <a class="release-link" href="https://github.com/Uyruw3/BottyTheRobot/releases/tag/botty-robot-v0.1.0">Release v0.1.0</a>
           </article>
-
-          <article class="project-card card-desktop">
-            <div class="card-topline"><span>03 / ESCRITORIO</span><span class="card-symbol" aria-hidden="true">⌘</span></div>
-            <div class="project-illustration illustration-desktop" aria-hidden="true">
-              <span class="screen-frame">
-                <span class="screen-eyes"><i></i><i></i></span>
-                <span class="screen-stand"></span>
-              </span>
-              <span class="screen-spark spark-one"></span>
-              <span class="screen-spark spark-two"></span>
-            </div>
-            <p class="project-kicker">PARA WINDOWS</p>
-            <h3>Botty Desktop</h3>
-            <p class="project-description">
-              Un compañero de escritorio con ojos animados, conversación y
-              memoria local. Incluye opciones para voz y lectura de pantalla
-              cuando instalas sus dependencias adicionales.
-            </p>
-            <ul class="tag-list" aria-label="Funciones principales">
-              <li>Ojos animados</li><li>Conversación</li><li>Voz opcional</li>
-            </ul>
-            <a class="card-link" href="https://github.com/Uyruw3/BottyTheRobot/tree/botty-desktop-v0.1.0/botty-desktop">
-              Explorar proyecto <span aria-hidden="true">↗</span>
-            </a>
-            <a class="release-link" href="https://github.com/Uyruw3/BottyTheRobot/releases/tag/botty-desktop-v0.1.0">Release v0.1.0</a>
-          </article>
         </div>
       </section>
 
@@ -144,9 +127,9 @@
           <p class="eyebrow">UN EXPERIMENTO ABIERTO</p>
           <h2>Pequeño en tamaño.<br><span>Grande en curiosidad.</span></h2>
           <p>
-            Botty sigue creciendo. Cada proyecto es una invitación a aprender,
-            construir y descubrir cómo la tecnología puede sentirse un poco
-            más cercana.
+            Botty sigue creciendo entre la pantalla y el mundo físico. Cada
+            edición es una invitación a aprender, construir y descubrir cómo
+            la tecnología puede sentirse un poco más cercana.
           </p>
           <a class="button button-outline" href="https://github.com/Uyruw3/BottyTheRobot">Conoce el repositorio <span aria-hidden="true">↗</span></a>
         </div>
