@@ -11,8 +11,10 @@ independiente.
 La [página de presentación de Botty](https://uyruw3.github.io/BottyTheRobot/)
 está publicada con GitHub Pages desde [`docs/`](docs/) en la rama
 `uyruw3-botty-project`. Presenta las dos ediciones del mismo Botty y su
-herramienta complementaria. Después de integrar el cambio en `main`, se puede
-cambiar la fuente de Pages a `main` y conservar `/docs` como carpeta.
+herramienta complementaria, explica el flujo de interacción, los requisitos,
+la configuración de IA, la privacidad y las precauciones de hardware. Después
+de integrar el cambio en `main`, se puede cambiar la fuente de Pages a `main`
+y conservar `/docs` como carpeta.
 
 | Producto / edición | Carpeta | Destino |
 | --- | --- | --- |

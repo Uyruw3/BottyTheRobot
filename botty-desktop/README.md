@@ -1,9 +1,10 @@
 # Botty Desktop
 
-Botty Desktop is the Windows desktop companion: an animated Pygame face with
-local conversation memory, optional speech, and Windows app, web-search, and
-screen-reading actions. It is a separate product from both Raspberry Pi robot
-projects in this repository.
+Botty Desktop is the Windows desktop edition of Botty: an animated Pygame face
+with local conversation memory, optional speech, and Windows app, web-search,
+and screen-reading actions. The Raspberry Pi prototype is the physical edition
+of the same Botty character; each edition has its own implementation and
+installation.
 
 ## Requirements
 

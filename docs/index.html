@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#0b1020">
     <meta
       name="description"
-      content="Conoce Botty: el mismo compañero en edición de escritorio para Windows y prototipo físico para Raspberry Pi, más herramientas de hardware."
+      content="Conoce cómo funciona Botty: la misma personalidad en escritorio Windows y robot Raspberry Pi, con guía de uso, IA, voz, privacidad y hardware."
     >
     <title>Botty — robótica con personalidad</title>
     <link rel="stylesheet" href="styles.css">
@@ -19,6 +19,7 @@
       </a>
       <nav aria-label="Navegación principal">
         <a href="#proyectos">Proyectos</a>
+        <a href="#funcionamiento">Cómo funciona</a>
         <a href="#filosofia">Sobre Botty</a>
         <a class="nav-link" href="https://github.com/Uyruw3/BottyTheRobot">GitHub <span aria-hidden="true">↗</span></a>
       </nav>
@@ -120,6 +121,182 @@
             <a class="release-link" href="https://github.com/Uyruw3/BottyTheRobot/releases/tag/botty-robot-v0.1.0">Release v0.1.0</a>
           </article>
         </div>
+      </section>
+
+      <section class="how-it-works section-wrap" id="funcionamiento">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">DE LA INTERACCIÓN A LA RESPUESTA</p>
+            <h2>¿Cómo funciona Botty?</h2>
+          </div>
+          <p class="section-intro">
+            En las dos ediciones, el ciclo es parecido: Botty recibe una
+            interacción, decide qué hacer y responde. El hardware disponible
+            y los extras instalados determinan qué funciones están activas.
+          </p>
+        </div>
+
+        <ol class="flow-grid">
+          <li class="flow-card">
+            <span class="flow-number">01</span>
+            <span class="flow-icon" aria-hidden="true">◉</span>
+            <h3>Te recibe</h3>
+            <p>
+              En Windows puedes escribir, usar el micrófono o tocar la ventana.
+              En el prototipo físico puedes hablar, usar el teclado o un mando;
+              una cámara puede detectar personas y objetos.
+            </p>
+          </li>
+          <li class="flow-card">
+            <span class="flow-number">02</span>
+            <span class="flow-icon" aria-hidden="true">⌘</span>
+            <h3>Interpreta</h3>
+            <p>
+              El reconocedor convierte la voz en texto cuando está instalado.
+              Botty resuelve saludos y acciones sencillas directamente; para
+              preguntas abiertas consulta su motor de IA y el contexto de la
+              conversación.
+            </p>
+          </li>
+          <li class="flow-card">
+            <span class="flow-number">03</span>
+            <span class="flow-icon" aria-hidden="true">↗</span>
+            <h3>Elige una acción</h3>
+            <p>
+              Puede contestar, cambiar de expresión, buscar información o usar
+              herramientas disponibles. En Raspberry Pi los motores y sensores
+              dependen de los controladores conectados y de la configuración
+              del robot.
+            </p>
+          </li>
+          <li class="flow-card">
+            <span class="flow-number">04</span>
+            <span class="flow-icon" aria-hidden="true">◡</span>
+            <h3>Te responde</h3>
+            <p>
+              Los ojos animados acompañan la interacción. Si la síntesis de voz
+              está habilitada, Botty también habla; el prototipo puede guardar
+              recuerdos localmente y mostrar estado y controles en su dashboard
+              web.
+            </p>
+          </li>
+        </ol>
+
+        <div class="edition-details">
+          <article class="detail-panel detail-desktop">
+            <p class="eyebrow">EDICIÓN DE ESCRITORIO · WINDOWS</p>
+            <h3>Botty vive en tu pantalla.</h3>
+            <p>
+              La aplicación abre una ventana con sus ojos. Escribe con
+              <kbd>Enter</kbd> para escribir y vuelve a pulsarlo para enviar;
+              <kbd>V</kbd> inicia una escucha puntual y <kbd>Esc</kbd> cierra la
+              aplicación. También puedes hacer clic para provocar una reacción.
+              Con los extras de voz, el micrófono queda escuchando y puedes
+              empezar una frase con “Boti”.
+            </p>
+            <p>
+              Las respuestas de IA usan un modelo GGUF local si instalas el
+              extra <code>local-ai</code> y colocas un modelo en
+              <code>botty/models/</code>. Sin ese modelo, siguen disponibles
+              las acciones directas, pero no el chat generativo. La búsqueda
+              web, el clima, la apertura de aplicaciones y la lectura OCR se
+              activan con solicitudes reconocidas; la lectura de pantalla
+              requiere Tesseract instalado en Windows.
+            </p>
+            <div class="detail-facts">
+              <span><strong>Interfaz</strong> Pygame</span>
+              <span><strong>IA</strong> GGUF local · opcional</span>
+              <span><strong>Voz</strong> Extras · Google STT y edge-tts</span>
+              <span><strong>Recuerdos</strong> Archivo local</span>
+            </div>
+            <a class="detail-link" href="https://github.com/Uyruw3/BottyTheRobot/releases/tag/botty-desktop-v0.1.0">Ver instalación de Desktop <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="detail-panel detail-robot">
+            <p class="eyebrow">EDICIÓN FÍSICA · RASPBERRY PI</p>
+            <h3>Botty percibe el entorno.</h3>
+            <p>
+              El programa combina el rostro animado con módulos opcionales de
+              micrófono, cámara, reconocimiento facial y sensores. El bucle
+              principal actualiza la expresión y procesa voz, visión y
+              controles según el equipo conectado.
+            </p>
+            <p>
+              Para conversar, el motor de IA se configura con Ollama local
+              (predeterminado; modelo <code>qwen2.5:3b</code>) o con OpenAI
+              mediante una clave propia. La búsqueda, la música y el dashboard
+              necesitan sus dependencias y configuración. Los motores y el
+              sonar están deshabilitados por defecto; OLED y aprendizaje por
+              refuerzo también dependen de extras y configuración.
+            </p>
+            <div class="detail-facts">
+              <span><strong>IA</strong> Ollama / OpenAI</span>
+              <span><strong>Dashboard</strong> Flask opcional · puerto 5000</span>
+              <span><strong>Movimiento</strong> Desactivado inicialmente</span>
+            </div>
+            <a class="detail-link" href="https://github.com/Uyruw3/BottyTheRobot/releases/tag/robot_botty-v0.1.0">Ver instalación del Prototype <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+
+        <aside class="setup-panel">
+          <div>
+            <p class="eyebrow">EMPEZAR</p>
+            <h3>Prueba primero en pantalla.</h3>
+            <p>
+              Instala Python 3.10 o superior. Los comandos instalan cada edición
+              por separado. Aunque son el mismo Botty, no comparten instalación
+              ni memoria.
+            </p>
+          </div>
+          <div class="setup-command">
+            <span>Windows · Botty Desktop</span>
+            <code>cd botty-desktop<br>python -m pip install -e ".[voice]"<br>botty</code>
+          </div>
+          <div class="setup-command">
+            <span>Raspberry Pi · Botty Prototype</span>
+            <code>cd robot_botty<br>python -m pip install -e ".[web]"<br>python -m botty</code>
+          </div>
+        </aside>
+
+        <div class="hardware-how">
+          <div>
+            <p class="eyebrow">HERRAMIENTA COMPLEMENTARIA</p>
+            <h3>Prueba el hardware por separado.</h3>
+            <p>
+              <strong>Botty Robot Hardware</strong> es una consola independiente
+              para comprobar motores, sonar y buzzer en Raspberry Pi. Escribe
+              <code>help</code> para ver comandos como <code>forward</code>,
+              <code>distance</code>, <code>beep</code> y <code>stop</code>.
+              Cada movimiento dura 0,3 s por defecto y puede limitarse a un
+              máximo de 2 s; sin <code>RPi.GPIO</code>, solo funciona en modo
+              simulación.
+            </p>
+          </div>
+          <code class="hardware-install">cd botty-robot<br>python -m pip install -e .<br>botty-robot</code>
+          <a class="detail-link" href="https://github.com/Uyruw3/BottyTheRobot/releases/tag/botty-robot-v0.1.0">Ver controlador <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <aside class="robot-config-note">
+          <strong>Antes de mover el robot</strong>
+          <p>
+            Levanta las ruedas al probar. La edición Prototype trae el control
+            de motores desactivado inicialmente; habilítalo solo después de
+            revisar el driver y el cableado. Para el HC-SR04, adapta su eco de
+            5 V con un divisor o level shifter: una Raspberry Pi usa GPIO de
+            3,3 V y puede dañarse con 5 V directos.
+          </p>
+        </aside>
+
+        <aside class="privacy-panel">
+          <strong>Datos y privacidad</strong>
+          <p>
+            La memoria de conversación se guarda localmente. El reconocimiento
+            de voz del prototipo puede usar Google; la edición física puede
+            enviar consultas a OpenAI si eliges ese proveedor. Ollama y el
+            modelo GGUF de Desktop pueden ejecutarse localmente. Revisa la
+            configuración antes de compartir datos personales.
+          </p>
+        </aside>
       </section>
 
       <section class="manifesto" id="filosofia">

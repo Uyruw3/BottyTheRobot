@@ -3,9 +3,9 @@
 Robot autónomo con IA, visión por cámara, reconocimiento facial, voz interactiva,
 memoria a largo plazo, sistema de emociones, plugins extensibles y panel web de control.
 
-Este es el prototipo completo para el robot físico. En Windows puede ejecutarse
-en modo de desarrollo o simulación; no es la aplicación independiente
-`botty-desktop/`, que está orientada a Windows.
+Esta es la edición de Botty para el robot físico. La edición `botty-desktop/`
+lleva el mismo compañero a una aplicación Windows independiente; cada edición
+tiene su implementación e instalación propias.
 
 > **Estado:** Alpha — nada de lo que ves es final.
 > **Versión:** 0.1.0
