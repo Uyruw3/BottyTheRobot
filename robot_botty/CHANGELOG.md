@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0
+
+- Published Botty Robot as a standalone Raspberry Pi repository.
+- Includes the physical robot prototype and a separate GPIO hardware test console.
+- Documents default-disabled motor/sensor controls and hardware voltage safety.
+
 ## [0.1.0] - 2026-05-24
 
 ### Added

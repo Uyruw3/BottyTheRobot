@@ -6,6 +6,10 @@ and screen-reading actions. The Raspberry Pi prototype is the physical edition
 of the same Botty character; each edition has its own implementation and
 installation.
 
+**Standalone repository:** [Uyruw3/BottyDesktop](https://github.com/Uyruw3/BottyDesktop) ·
+[Botty website](https://uyruw3.github.io/BottyTheRobot/) ·
+[Robot edition](https://github.com/Uyruw3/BottyRobot)
+
 ## Requirements
 
 - Windows 10 or newer
@@ -15,7 +19,7 @@ installation.
 ## Install and run
 
 ```powershell
-cd botty-desktop
+cd BottyDesktop
 python -m pip install -e ".[voice]"
 botty
 ```

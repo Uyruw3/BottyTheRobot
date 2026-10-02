@@ -7,7 +7,7 @@ load_dotenv(dotenv_path=Path.home() / ".botty" / ".env")
 
 
 class Config:
-    VERSION = "0.1.0"
+    VERSION = "0.2.0"
 
     # ── Display ──
     DISPLAY_WIDTH = 480
