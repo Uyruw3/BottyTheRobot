@@ -1,0 +1,230 @@
+{
+  "plugin_configurations": {
+    "greeter": {
+      "enabled": true,
+      "config": {
+        "greet_known": true,
+        "greet_unknown": true,
+        "cooldown_seconds": 30,
+        "use_face_recognition": true,
+        "custom_greetings": {
+          "known": ["Que bueno verte de nuevo, {name}!", "Hola {name}! Como estas?"],
+          "unknown": ["Hola! No te conozco. Como te llamas?"]
+        }
+      }
+    },
+    "music_announcer": {
+      "enabled": false,
+      "config": {
+        "announce_on_start": true,
+        "announce_on_change": false,
+        "include_artist": true,
+        "phrases": [
+          "Reproduciendo {song} de {artist}",
+          "Ahora suena: {song} por {artist}",
+          "Poniendo {song} de {artist}"
+        ]
+      }
+    },
+    "weather_reporter": {
+      "enabled": false,
+      "config": {
+        "default_city": "Madrid",
+        "units": "metric",
+        "auto_report_interval": 3600,
+        "report_on_greeting": true
+      }
+    },
+    "timer_plugin": {
+      "enabled": true,
+      "config": {
+        "max_timers": 5,
+        "notification_sound": "beep",
+        "persist_timers": true
+      }
+    },
+    "screenshot_plugin": {
+      "enabled": true,
+      "config": {
+        "save_directory": "~/.botty/screenshots",
+        "filename_format": "screenshot_%Y%m%d_%H%M%S.png",
+        "notify_on_capture": true
+      }
+    },
+    "volume_control": {
+      "enabled": true,
+      "config": {
+        "step_size": 10,
+        "max_volume": 100,
+        "min_volume": 0,
+        "show_notification": true
+      }
+    },
+    "wallpaper_changer": {
+      "enabled": false,
+      "config": {
+        "interval_minutes": 30,
+        "source": "unsplash",
+        "category": "nature",
+        "resolution": "1920x1080"
+      }
+    },
+    "pomodoro_plugin": {
+      "enabled": true,
+      "config": {
+        "work_minutes": 25,
+        "break_minutes": 5,
+        "long_break_minutes": 15,
+        "pomodoros_before_long_break": 4,
+        "notification_sound": "alarm",
+        "auto_start_break": true
+      }
+    },
+    "translator_plugin": {
+      "enabled": true,
+      "config": {
+        "default_source": "es",
+        "default_target": "en",
+        "show_phonetic": false,
+        "max_text_length": 500
+      }
+    },
+    "calculator_plugin": {
+      "enabled": true,
+      "config": {
+        "max_expression_length": 100,
+        "allowed_functions": ["sum", "resta", "multiplica", "divide", "potencia", "raiz"],
+        "decimal_places": 2
+      }
+    },
+    "dice_plugin": {
+      "enabled": true,
+      "config": {
+        "max_dice": 10,
+        "allowed_types": ["d4", "d6", "d8", "d10", "d12", "d20", "d100"],
+        "default_type": "d20",
+        "crit_range": [20]
+      }
+    },
+    "quote_plugin": {
+      "enabled": true,
+      "config": {
+        "auto_quote_interval": 300,
+        "categories": ["inspiration", "wisdom", "friendship", "technology"]
+      }
+    },
+    "compliment_plugin": {
+      "enabled": true,
+      "config": {
+        "probability_on_greeting": 0.1,
+        "probability_on_voice": 0.05,
+        "compliments_per_session": 3
+      }
+    },
+    "alarm_plugin": {
+      "enabled": true,
+      "config": {
+        "max_alarms": 10,
+        "default_minutes": 5,
+        "alarm_sound": "digital_alarm",
+        "snooze_minutes": 5
+      }
+    },
+    "notes_plugin": {
+      "enabled": true,
+      "config": {
+        "max_notes": 100,
+        "notes_file": "~/.botty/notes.json",
+        "max_display": 5
+      }
+    },
+    "countdown_plugin": {
+      "enabled": true,
+      "config": {
+        "max_countdowns": 5,
+        "notification_minutes": [1, 5, 10],
+        "sound_on_complete": true
+      }
+    },
+    "joke_plugin": {
+      "enabled": true,
+      "config": {
+        "auto_joke_interval": 120,
+        "auto_joke_probability": 0.005,
+        "max_jokes_per_session": 20
+      }
+    },
+    "reminder_plugin": {
+      "enabled": true,
+      "config": {
+        "default_interval_minutes": 30,
+        "reminders_file": "~/.botty/reminders.json",
+        "max_reminders": 20
+      }
+    },
+    "echo_plugin": {
+      "enabled": false,
+      "config": {
+        "max_echo_length": 50,
+        "require_trigger_word": true,
+        "trigger_words": ["repite", "eco", "dilo"]
+      }
+    },
+    "mood_light_plugin": {
+      "enabled": true,
+      "config": {
+        "mode": "auto",
+        "brightness": 0.5,
+        "color_scheme": "vibrant",
+        "fade_speed": 0.3
+      }
+    }
+  },
+    }
+  },
+  "news": {
+    "enabled": true,
+    "refresh_interval_minutes": 60,
+    "max_headlines": 5,
+    "categories": ["technology", "science", "world"],
+    "language": "es"
+  },
+  "dictionary": {
+    "enabled": true,
+    "max_definitions_per_session": 10,
+    "language": "es",
+    "include_synonyms": true,
+    "include_examples": false
+  },
+  "horoscope": {
+    "enabled": true,
+    "language": "es",
+    "daily_prediction": true,
+    "include_love": true,
+    "include_career": true,
+    "include_health": false
+  },
+  "password_generator": {
+    "enabled": true,
+    "default_length": 16,
+    "min_length": 4,
+    "max_length": 64,
+    "use_symbols": true,
+    "use_numbers": true,
+    "use_uppercase": true,
+    "use_lowercase": true
+  },
+  "global_plugin_settings": {
+    "auto_discover": true,
+    "discover_path": "~/.botty/plugins/",
+    "enable_by_default": true,
+    "blacklist": [],
+    "whitelist": [],
+    "log_level": "info",
+    "max_plugins_per_event": 10,
+    "event_timeout_seconds": 5,
+    "enable_plugin_logging": true,
+    "cache_enabled": true,
+    "cache_ttl_minutes": 30
+  }
+}

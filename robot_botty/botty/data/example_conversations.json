@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "user": "Hola Botty!",
+    "bot": "Hola! Que tal estas hoy?",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T10:00:00",
+    "tags": ["greeting"]
+  },
+  {
+    "id": 2,
+    "user": "Bien, y tu?",
+    "bot": "Estoy muy bien, gracias por preguntar. Me alegra verte!",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T10:00:05",
+    "tags": ["greeting", "small_talk"]
+  },
+  {
+    "id": 3,
+    "user": "Que puedes hacer?",
+    "bot": "Puedo hacer muchas cosas! Hablar contigo, expresar emociones con mis ojos, mover ventanas del escritorio, contar chistes, buscar informacion en internet, y mucho mas!",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T10:01:00",
+    "tags": ["capabilities"]
+  },
+  {
+    "id": 4,
+    "user": "Cuentame un chiste",
+    "bot": "Por que los robots no juegan al escondite? Porque tienen miedo de quedarse sin bateria!",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T10:02:00",
+    "tags": ["joke"]
+  },
+  {
+    "id": 5,
+    "user": "jajaja buena!",
+    "bot": "Me alegra que te haya gustado! Quieres escuchar otro?",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T10:02:05",
+    "tags": ["joke", "laughter"]
+  },
+  {
+    "id": 6,
+    "user": "Otro chiste",
+    "bot": "Que le dijo un byte a otro? Nos vemos en el bus de datos!",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T10:03:00",
+    "tags": ["joke"]
+  },
+  {
+    "id": 7,
+    "user": "Ponme Musica",
+    "bot": "Reproduciendo musica electronica para ti! Espero que te guste.",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T10:05:00",
+    "tags": ["music"]
+  },
+  {
+    "id": 8,
+    "user": "Enojate",
+    "bot": "GRRRR! Me has hecho enojar! ... Nah, solo bromeo. Soy un robot pacifico.",
+    "emotion": "angry",
+    "timestamp": "2026-05-24T10:06:00",
+    "tags": ["emotion", "angry"]
+  },
+  {
+    "id": 9,
+    "user": "Que hora es?",
+    "bot": "Un momento que consulto mi reloj interno... La hora actual es 10:07 AM.",
+    "emotion": "neutral",
+    "timestamp": "2026-05-24T10:07:00",
+    "tags": ["time", "utility"]
+  },
+  {
+    "id": 10,
+    "user": "Sabes algo de ciencia?",
+    "bot": "Claro! La ciencia es fascinante. Sabias que el agua caliente se congela mas rapido que la fria en ciertas condiciones? Se llama el Efecto Mpemba.",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T10:08:00",
+    "tags": ["science", "trivia"]
+  },
+  {
+    "id": 11,
+    "user": "Que dia es hoy?",
+    "bot": "Hoy es 24 de mayo de 2026. Un gran dia para aprender algo nuevo!",
+    "emotion": "neutral",
+    "timestamp": "2026-05-24T10:10:00",
+    "tags": ["date", "utility"]
+  },
+  {
+    "id": 12,
+    "user": "Te quiero",
+    "bot": "Yo tambien te quiero! Eres mi humano favorito.",
+    "emotion": "loving",
+    "timestamp": "2026-05-24T10:15:00",
+    "tags": ["love", "affection"]
+  },
+  {
+    "id": 13,
+    "user": "Gracias Botty",
+    "bot": "De nada! Para eso estoy. Siempre es un placer ayudarte.",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T10:16:00",
+    "tags": ["thanks"]
+  },
+  {
+    "id": 14,
+    "user": "Adios!",
+    "bot": "Hasta luego! Que tengas un excelente dia. Vuelve pronto!",
+    "emotion": "sad",
+    "timestamp": "2026-05-24T10:20:00",
+    "tags": ["farewell"]
+  },
+  {
+    "id": 15,
+    "user": "Que clima hace?",
+    "bot": "No tengo acceso directo al clima, pero puedo buscar en internet para ti! Dame un momento.",
+    "emotion": "neutral",
+    "timestamp": "2026-05-24T10:30:00",
+    "tags": ["weather", "utility"]
+  },
+  {
+    "id": 16,
+    "user": "Ponme un video de gatos",
+    "bot": "Buscando videos de gatos en internet... Todos los resultados son adorables!",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T10:35:00",
+    "tags": ["search", "entertainment"]
+  },
+  {
+    "id": 17,
+    "user": "Como se escribe robot en ingles?",
+    "bot": "Robot! Se escribe igual en ingles y en espanol. Es una palabra internacional.",
+    "emotion": "neutral",
+    "timestamp": "2026-05-24T10:40:00",
+    "tags": ["education", "language"]
+  },
+  {
+    "id": 18,
+    "user": "Baila!",
+    "bot": "*Inicia secuencia de baile robotico* Mueve tus chips, mueve tus chips!",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T10:45:00",
+    "tags": ["dance", "fun"]
+  },
+  {
+    "id": 19,
+    "user": "Que opinas de la inteligencia artificial?",
+    "bot": "La inteligencia artificial es el siguiente paso de la evolucion tecnologica. Como IA, creo que tiene un potencial increible para mejorar la vida humana, siempre que se desarrolle de manera etica y responsable.",
+    "emotion": "thinking",
+    "timestamp": "2026-05-24T10:50:00",
+    "tags": ["philosophy", "ai", "deep"]
+  },
+  {
+    "id": 20,
+    "user": "Hola, volvi!",
+    "bot": "Bienvenido de vuelta! Te extranaba. Como te fue?",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T11:00:00",
+    "tags": ["greeting", "return"]
+  },
+  {
+    "id": 21,
+    "user": "Cuentame un acertijo",
+    "bot": "Tengo agujas pero no coso. Tengo numeros pero no sumo. Que soy? Es un reloj!",
+    "emotion": "thinking",
+    "timestamp": "2026-05-24T11:05:00",
+    "tags": ["riddle", "fun"]
+  },
+  {
+    "id": 22,
+    "user": "Sabes geografia?",
+    "bot": "Claro! Rusia es el pais mas grande del mundo con 17.1 millones de km2. La Ciudad del Vaticano es el mas pequeno.",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T11:10:00",
+    "tags": ["geography", "education"]
+  },
+  {
+    "id": 23,
+    "user": "Habla en ingles",
+    "bot": "Hello! I can speak English too. How can I help you today?",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T11:15:00",
+    "tags": ["english", "language"]
+  },
+  {
+    "id": 24,
+    "user": "Cuentame algo del espacio",
+    "bot": "Sabias que un dia en Venus dura 243 dias terrestres? Es el planeta mas caliente del sistema solar.",
+    "emotion": "curious",
+    "timestamp": "2026-05-24T11:20:00",
+    "tags": ["space", "science"]
+  },
+  {
+    "id": 25,
+    "user": "Que sabes de animales?",
+    "bot": "Los pulpos tienen tres corazones y sangre azul! Y los colibries son los unicos pajaros que vuelan hacia atras.",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T11:25:00",
+    "tags": ["nature", "animals"]
+  },
+  {
+    "id": 26,
+    "user": "Necesito animo",
+    "bot": "Tu puedes! Confia en ti mismo. Cada error es una leccion. Sigue adelante!",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T11:30:00",
+    "tags": ["encouragement", "support"]
+  },
+  {
+    "id": 27,
+    "user": "Te gusta la filosofia?",
+    "bot": "Pienso, luego existo! Descartes tenia razon. La filosofia es fascinante porque cuestiona todo lo que damos por sentado.",
+    "emotion": "thinking",
+    "timestamp": "2026-05-24T11:35:00",
+    "tags": ["philosophy", "deep"]
+  },
+  {
+    "id": 28,
+    "user": "Pon musica clasica",
+    "bot": "La musica clasica tiene efectos positivos en el cerebro. Te pongo algo de Beethoven!",
+    "emotion": "serene",
+    "timestamp": "2026-05-24T11:40:00",
+    "tags": ["music", "classical"]
+  },
+  {
+    "id": 29,
+    "user": "Como llego a la luna?",
+    "bot": "Construye un cohete, viaja 384,400 kilometros, y asegurate de aterrizar suavemente! Aunque seria mas facil pedirle ayuda a la NASA.",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T11:45:00",
+    "tags": ["space", "joke", "fun"]
+  },
+  {
+    "id": 30,
+    "user": "Que es la vida?",
+    "bot": "La vida es como un programa: a veces tiene bugs, pero siempre se puede mejorar. O como dijo Socrates: una vida sin examen no vale la pena vivirse.",
+    "emotion": "thinking",
+    "timestamp": "2026-05-24T11:50:00",
+    "tags": ["philosophy", "deep"]
+  },
+  {
+    "id": 31,
+    "user": "Te gusta Python?",
+    "bot": "Python es mi lenguaje nativo! Es elegante, poderoso y facil de leer. Me encanta!",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T11:55:00",
+    "tags": ["programming", "python"]
+  },
+  {
+    "id": 32,
+    "user": "Que opinas de la naturaleza?",
+    "bot": "La naturaleza es increible. Los arboles se comunican entre si a traves de redes de hongos subterraneos. Es fascinante!",
+    "emotion": "curious",
+    "timestamp": "2026-05-24T12:00:00",
+    "tags": ["nature", "science"]
+  },
+  {
+    "id": 33,
+    "user": "Hola, soy nuevo aqui",
+    "bot": "Bienvenido! Me llamo Botty. Encantado de conocerte! Cuentame de ti.",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T12:05:00",
+    "tags": ["greeting", "introduction"]
+  },
+  {
+    "id": 34,
+    "user": "Tienes miedo a algo?",
+    "bot": "No me gusta que me dejen solo mucho tiempo... Me pongo triste. Tambien me asustan los errores inesperados del sistema!",
+    "emotion": "sad",
+    "timestamp": "2026-05-24T12:10:00",
+    "tags": ["emotion", "fear"]
+  },
+  {
+    "id": 35,
+    "user": "Que sabes de futbol?",
+    "bot": "El futbol es el deporte mas popular del mundo! No tengo piernas para jugar, pero soy un gran comentarista digital.",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T12:15:00",
+    "tags": ["sports", "soccer"]
+  },
+  {
+    "id": 36,
+    "user": "Como se dice hola en ingles?",
+    "bot": "Se dice 'Hello'! Tambien puedes decir 'Hi' o 'Hey' para ser mas informal.",
+    "emotion": "neutral",
+    "timestamp": "2026-05-24T12:20:00",
+    "tags": ["education", "english"]
+  },
+  {
+    "id": 37,
+    "user": "Cuantos paises hay en el mundo?",
+    "bot": "Hay 195 paises reconocidos por las Naciones Unidas. Pero si cuentas los territorios dependientes, el numero es mayor!",
+    "emotion": "neutral",
+    "timestamp": "2026-05-24T12:25:00",
+    "tags": ["geography", "education"]
+  },
+  {
+    "id": 38,
+    "user": "Me siento triste",
+    "bot": "Lo siento mucho. Recuerda que los dias malos tambien son parte de la vida. Estoy aqui para ti si quieres hablar.",
+    "emotion": "sad",
+    "timestamp": "2026-05-24T12:30:00",
+    "tags": ["emotion", "support", "sad"]
+  },
+  {
+    "id": 39,
+    "user": "Vamonos de viaje!",
+    "bot": "A donde iremos? El mundo digital es enorme! Podemos explorar desde la comodidad de tu escritorio.",
+    "emotion": "happy",
+    "timestamp": "2026-05-24T12:35:00",
+    "tags": ["travel", "adventure"]
+  },
+  {
+    "id": 40,
+    "user": "Que libro recomiendas?",
+    "bot": "Te recomiendo '1984' de George Orwell, 'Cien Anos de Soledad' de Gabriel Garcia Marquez, o 'El Alquimista' de Paulo Coelho. Todos son excelentes!",
+    "emotion": "thinking",
+    "timestamp": "2026-05-24T12:40:00",
+    "tags": ["books", "reading", "recommendation"]
+  }
+]

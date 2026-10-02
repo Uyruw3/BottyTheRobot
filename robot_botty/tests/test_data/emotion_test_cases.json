@@ -1,0 +1,12 @@
+[
+  {"event": "greeting", "expected_emotion": "happy", "valence_change": 0.15, "arousal_change": 0.1},
+  {"event": "insult", "expected_emotion": "sad", "valence_change": -0.25, "arousal_change": 0.05},
+  {"event": "praise", "expected_emotion": "joyful", "valence_change": 0.2, "arousal_change": 0.15},
+  {"event": "threat", "expected_emotion": "fearful", "valence_change": -0.15, "arousal_change": 0.3},
+  {"event": "surprise", "expected_emotion": "surprised", "valence_change": 0.05, "arousal_change": 0.35},
+  {"event": "anger", "expected_emotion": "angry", "valence_change": -0.2, "arousal_change": 0.25},
+  {"event": "sadness", "expected_emotion": "sad", "valence_change": -0.2, "arousal_change": -0.1},
+  {"event": "boredom", "expected_emotion": "neutral", "valence_change": -0.05, "arousal_change": -0.2},
+  {"event": "success", "expected_emotion": "joyful", "valence_change": 0.25, "arousal_change": 0.2},
+  {"event": "failure", "expected_emotion": "sad", "valence_change": -0.15, "arousal_change": -0.05}
+]
